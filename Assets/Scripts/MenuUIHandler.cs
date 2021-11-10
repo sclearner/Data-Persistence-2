@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 #if UNITY_EDITOR
     using UnityEditor;
 #endif
@@ -20,5 +21,9 @@ public class MenuUIHandler : MonoBehaviour
 #else
         Application.Exit();
 #endif
+    }
+    public void NewPlayerName(GameObject playerName)
+    {
+        DataManager.Instance.player = playerName.GetComponent<InputField>().text;
     }
 }
