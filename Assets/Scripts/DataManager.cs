@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class DataManager : MonoBehaviour
 {
@@ -8,7 +9,6 @@ public class DataManager : MonoBehaviour
 
     public string player = "Player";
 
-    public int highScore = 0;
     private void Awake()
     {
         if (Instance != null)
