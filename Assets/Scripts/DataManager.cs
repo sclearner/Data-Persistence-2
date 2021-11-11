@@ -6,7 +6,7 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance;
 
-    public string player = "";
+    public string player = "Player";
 
     private void Awake()
     {
